@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67794F201CF737D400C15FEF /* keyboardScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67794F201CF737D400C15FEF /* KeyboardScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67794F231CF737D400C15FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67794F251CF737D400C15FEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67794F2A1CF737D400C15FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		67794F171CF737D400C15FEF = {
 			isa = PBXGroup;
 			children = (
-				67794F221CF737D400C15FEF /* keyboardScroll */,
+				67794F221CF737D400C15FEF /* KeyboardScrollView */,
 				67794F211CF737D400C15FEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,19 +44,19 @@
 		67794F211CF737D400C15FEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67794F201CF737D400C15FEF /* keyboardScroll.app */,
+				67794F201CF737D400C15FEF /* KeyboardScrollView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67794F221CF737D400C15FEF /* keyboardScroll */ = {
+		67794F221CF737D400C15FEF /* KeyboardScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				67794F231CF737D400C15FEF /* AppDelegate.swift */,
 				67794F251CF737D400C15FEF /* ViewController.swift */,
 				67794F351CF739B900C15FEF /* other */,
 			);
-			path = keyboardScroll;
+			path = KeyboardScrollView;
 			sourceTree = "<group>";
 		};
 		67794F351CF739B900C15FEF /* other */ = {
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		67794F1F1CF737D400C15FEF /* keyboardScroll */ = {
+		67794F1F1CF737D400C15FEF /* KeyboardScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67794F321CF737D400C15FEF /* Build configuration list for PBXNativeTarget "keyboardScroll" */;
+			buildConfigurationList = 67794F321CF737D400C15FEF /* Build configuration list for PBXNativeTarget "KeyboardScrollView" */;
 			buildPhases = (
 				67794F1C1CF737D400C15FEF /* Sources */,
 				67794F1D1CF737D400C15FEF /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = keyboardScroll;
-			productName = keyboardScroll;
-			productReference = 67794F201CF737D400C15FEF /* keyboardScroll.app */;
+			name = KeyboardScrollView;
+			productName = KeyboardScrollView;
+			productReference = 67794F201CF737D400C15FEF /* KeyboardScrollView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 67794F1B1CF737D400C15FEF /* Build configuration list for PBXProject "keyboardScroll" */;
+			buildConfigurationList = 67794F1B1CF737D400C15FEF /* Build configuration list for PBXProject "KeyboardScrollView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67794F1F1CF737D400C15FEF /* keyboardScroll */,
+				67794F1F1CF737D400C15FEF /* KeyboardScrollView */,
 			);
 		};
 /* End PBXProject section */
@@ -247,11 +247,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = keyboardScroll/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				INFOPLIST_FILE = KeyboardScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.keyboardScroll;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.KeyboardScrollView;
+				PRODUCT_NAME = KeyboardScrollView;
 			};
 			name = Debug;
 		};
@@ -259,18 +259,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = keyboardScroll/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				INFOPLIST_FILE = KeyboardScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.keyboardScroll;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eneff.app.KeyboardScrollView;
+				PRODUCT_NAME = KeyboardScrollView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67794F1B1CF737D400C15FEF /* Build configuration list for PBXProject "keyboardScroll" */ = {
+		67794F1B1CF737D400C15FEF /* Build configuration list for PBXProject "KeyboardScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67794F301CF737D400C15FEF /* Debug */,
@@ -279,7 +279,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67794F321CF737D400C15FEF /* Build configuration list for PBXNativeTarget "keyboardScroll" */ = {
+		67794F321CF737D400C15FEF /* Build configuration list for PBXNativeTarget "KeyboardScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67794F331CF737D400C15FEF /* Debug */,

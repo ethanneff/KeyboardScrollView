@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67794F1F1CF737D400C15FEF"
-               BuildableName = "keyboardScroll.app"
-               BlueprintName = "keyboardScroll"
-               ReferencedContainer = "container:keyboardScroll.xcodeproj">
+               BuildableName = "KeyboardScrollView.app"
+               BlueprintName = "KeyboardScrollView"
+               ReferencedContainer = "container:KeyboardScrollView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67794F1F1CF737D400C15FEF"
-            BuildableName = "keyboardScroll.app"
-            BlueprintName = "keyboardScroll"
-            ReferencedContainer = "container:keyboardScroll.xcodeproj">
+            BuildableName = "KeyboardScrollView.app"
+            BlueprintName = "KeyboardScrollView"
+            ReferencedContainer = "container:KeyboardScrollView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67794F1F1CF737D400C15FEF"
-            BuildableName = "keyboardScroll.app"
-            BlueprintName = "keyboardScroll"
-            ReferencedContainer = "container:keyboardScroll.xcodeproj">
+            BuildableName = "KeyboardScrollView.app"
+            BlueprintName = "KeyboardScrollView"
+            ReferencedContainer = "container:KeyboardScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67794F1F1CF737D400C15FEF"
-            BuildableName = "keyboardScroll.app"
-            BlueprintName = "keyboardScroll"
-            ReferencedContainer = "container:keyboardScroll.xcodeproj">
+            BuildableName = "KeyboardScrollView.app"
+            BlueprintName = "KeyboardScrollView"
+            ReferencedContainer = "container:KeyboardScrollView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

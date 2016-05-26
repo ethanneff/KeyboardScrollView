@@ -33,38 +33,39 @@ class ViewController: UIViewController {
     view.backgroundColor = UIColor.init(colorLiteralRed: 0.95, green: 0.95, blue: 0.95, alpha: 1)
     view.addSubview(scrollView)
     scrollView.translatesAutoresizingMaskIntoConstraints = false
-    scrollView.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
-    scrollView.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor).active = true
-    scrollView.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
-    scrollViewBottomConstraint = scrollView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor)
-    scrollViewBottomConstraint.active = true
+    scrollViewBottomConstraint = NSLayoutConstraint(item: scrollView, attribute: .Bottom, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1, constant: 0)
+    NSLayoutConstraint.activateConstraints([
+      NSLayoutConstraint(item: scrollView, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Top, multiplier: 1, constant: 0),
+      NSLayoutConstraint(item: scrollView, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1, constant: 0),
+      NSLayoutConstraint(item: scrollView, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1, constant: 0),
+      scrollViewBottomConstraint,
+      ])
     
     var prev: UITextField = UITextField()
     for i in 0..<20 {
       if i == 0 {
-        prev = createTextField(scrollView.topAnchor, placeholder: i)
+        prev = createTextField(item: scrollView, attribute: .Top, placeholder: i)
       } else {
-        let next = createTextField(prev.bottomAnchor, placeholder: i)
+        let next = createTextField(item: prev, attribute: .Bottom, placeholder: i)
         prev = next
       }
     }
     scrollView.contentSize = CGSize(width: view.frame.width, height: scrollViewContentHeight + textFieldPadding)
   }
   
-  private func createTextField(topAnchor: NSLayoutYAxisAnchor, placeholder: Int) -> UITextField {
+  private func createTextField(item item: AnyObject, attribute: NSLayoutAttribute, placeholder: Int) -> UITextField {
     let textField = UITextField()
     scrollView.addSubview(textField)
     textField.placeholder = "textfield \(placeholder+1)"
     textField.borderStyle = .RoundedRect
-    textField.returnKeyType = .Next
     textField.backgroundColor = .whiteColor()
     textField.translatesAutoresizingMaskIntoConstraints = false
-    
-    textField.topAnchor.constraintEqualToAnchor(topAnchor, constant: textFieldPadding).active = true
-    textField.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor, constant: textFieldPadding).active = true
-    textField.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor, constant: -textFieldPadding).active = true
-    textField.heightAnchor.constraintEqualToConstant(textFieldHeight
-      ).active = true
+    NSLayoutConstraint.activateConstraints([
+      NSLayoutConstraint(item: textField, attribute: .Top, relatedBy: .Equal, toItem: item, attribute: attribute, multiplier: 1, constant: textFieldPadding),
+      NSLayoutConstraint(item: textField, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Leading, multiplier: 1, constant: textFieldPadding),
+      NSLayoutConstraint(item: textField, attribute: .Trailing, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1, constant: -textFieldPadding),
+      NSLayoutConstraint(item: textField, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: textFieldHeight),
+      ])
     scrollViewContentHeight += textFieldHeight + textFieldPadding
     
     return textField
